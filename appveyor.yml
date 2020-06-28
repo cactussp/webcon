@@ -9,7 +9,7 @@ install:
   - C:\python27\python.exe setup.py install
   - cd %APPVEYOR_BUILD_FOLDER%
 build_script:
-  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+  - call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
   - mkdir build
   - cd build
   - C:\python27\python.exe ..\configure.py --enable-optimize
